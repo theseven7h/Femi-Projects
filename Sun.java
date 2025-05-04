@@ -42,4 +42,12 @@ public class Sun {
 		System.out.printf("%s: %d dog year(s) old", name, humanYears * 7);
 	}
 
+	static void findMultipleOf7Not5() {
+		System.out.print("Multiples of 7 that are not multiples of 5 are");
+		for (int number = 2000; number <= 3200; number++) {
+			if (number % 7 == 0 && number % 5 != 0) System.out.printf(" %d", number );
+			if (number % 7 == 0 && number % 5 != 0 && number + 7 < 3200) System.out.print(",");	
+		}
+	}
+
 }
