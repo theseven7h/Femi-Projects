@@ -19,6 +19,23 @@ public class Sun {
 		}
 	}
 
+	static String displayAge(int ageYears) {
+		int years = ageYears;
+		long months = years * 12;
+		long days = years * 365;
+		long minutes = days * 1440;  
+		long seconds = minutes * 60;
 
+		String ages = """
+		Age: 
+		%d year(s)
+		%,d months
+		%,d days
+		%,d minutes
+		%,d seconds
+		""".formatted(years, months, days, minutes, seconds);
+
+		return ages;
+	}
 
 }
