@@ -38,4 +38,8 @@ public class Sun {
 		return ages;
 	}
 
+	static void displayDogAge(String name, int humanYears) {
+		System.out.printf("%s: %d dog year(s) old", name, humanYears * 7);
+	}
+
 }
