@@ -50,4 +50,15 @@ public class Sun {
 		}
 	}
 
+	static int computeSumOfNumber(int number) {
+		int rem = 0;
+		int sum = 0;
+		for (int count = 1; count <= 4; count++) {
+			rem = number % 10;
+			sum += rem;
+			number /= 10;
+		}
+		return sum;
+	}
+
 }
